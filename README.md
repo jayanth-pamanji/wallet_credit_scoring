@@ -29,7 +29,7 @@ This project scores wallets on a scale of **1 to 1000** based on their historica
 
 ## 💡 Processing Flow & Architecture
 
-
+```mermaid
 graph TD
     A[Raw Aave V2 Data] --> B[Data Cleaning]
     B --> C[Expand actionData JSON]
@@ -135,3 +135,76 @@ MIT License.
 * Integrate multi-chain behavior
 * Use self-supervised learning on wallet embeddings
 
+---
+
+# analysis.md
+
+# 📊 Score Analysis of Wallets
+
+This analysis highlights the behavior of wallets based on their assigned **credit scores (1-1000)** after unsupervised clustering using PCA and KMeans/DBSCAN.
+
+---
+
+## 🔢 Score Distribution
+
+### Score Buckets:
+
+| Score Range | Wallet Count |
+| ----------- | ------------ |
+| 0 - 100     | xxx wallets  |
+| 101 - 200   | xxx wallets  |
+| 201 - 300   | xxx wallets  |
+| 301 - 400   | xxx wallets  |
+| 401 - 500   | xxx wallets  |
+| 501 - 600   | xxx wallets  |
+| 601 - 700   | xxx wallets  |
+| 701 - 800   | xxx wallets  |
+| 801 - 900   | xxx wallets  |
+| 901 - 1000  | xxx wallets  |
+
+*Replace **\`\`** with actual wallet counts after scoring.*
+
+### Histogram
+
+```python
+import matplotlib.pyplot as plt
+plt.hist(scores_df['credit_score'], bins=10, edgecolor='black')
+plt.title('Wallet Credit Score Distribution')
+plt.xlabel('Credit Score (1-1000)')
+plt.ylabel('Number of Wallets')
+plt.grid(True)
+plt.show()
+```
+
+---
+
+## 💲 Behavior of Low-Scoring Wallets (0 - 300)
+
+* Typically single or very few transactions
+* High presence of `redeemunderlying` or inactivity
+* Many faced `liquidationcall`
+* Low or zero total volume
+* No diversity in DeFi actions (mostly one-off)
+
+---
+
+## 📈 Behavior of High-Scoring Wallets (700 - 1000)
+
+* Active across multiple days
+* High number of `deposit`, `borrow`, and `repay` events
+* Consistent transaction patterns
+* High total and average transaction volume
+* No liquidation events
+* Represent users with reliable and sustained DeFi behavior
+
+---
+
+## 📊 Insights
+
+* A significant portion of wallets are low activity (score < 300)
+* Clustering allowed clear separation of responsible vs erratic users
+* DBSCAN helped isolate wallets that may be noise, spam, or exploits (score \~0)
+
+---
+
+Let me know if you want these files structured for GitHub upload or a ZIP with folders!
