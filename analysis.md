@@ -1,3 +1,4 @@
+<img width="571" height="455" alt="image" src="https://github.com/user-attachments/assets/c6b16472-3b08-49e3-b821-f04e26e5e477" />
 
 # 📊 Score Analysis of Wallets
 
