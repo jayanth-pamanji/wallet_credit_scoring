@@ -1,10 +1,16 @@
-<img width="571" height="455" alt="image" src="https://github.com/user-attachments/assets/c6b16472-3b08-49e3-b821-f04e26e5e477" />
+
 
 # 📊 Score Analysis of Wallets
 
 This analysis highlights the behavior of wallets based on their assigned **credit scores (1–1000)** after unsupervised clustering using PCA and KMeans/DBSCAN.
 
 ---
+<img width="571" height="455" alt="image" src="https://github.com/user-attachments/assets/c6b16472-3b08-49e3-b821-f04e26e5e477" />
+
+<img width="1989" height="590" alt="image" src="https://github.com/user-attachments/assets/35112b66-bce2-4ec7-8694-df5609e2874b" />
+
+<img width="850" height="547" alt="image" src="https://github.com/user-attachments/assets/d9241978-8be0-417a-ae7f-39f10b0e997a" />
+
 
 ## 🔢 Score Distribution
 
