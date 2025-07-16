@@ -8,36 +8,18 @@ This analysis highlights the behavior of wallets based on their assigned **credi
 ## 🔢 Score Distribution
 
 ### Score Buckets:
-
 | Score Range | Wallet Count |
-| ----------- | ------------ |
-| 0 - 100     | xxx wallets  |
-| 101 - 200   | xxx wallets  |
-| 201 - 300   | xxx wallets  |
-| 301 - 400   | xxx wallets  |
-| 401 - 500   | xxx wallets  |
-| 501 - 600   | xxx wallets  |
-| 601 - 700   | xxx wallets  |
-| 701 - 800   | xxx wallets  |
-| 801 - 900   | xxx wallets  |
-| 901 - 1000  | xxx wallets  |
-
-> *Replace `xxx` with actual counts from your final scores.*
-
----
-
-### Histogram
-
-```python
-import matplotlib.pyplot as plt
-
-plt.hist(scores_df['credit_score'], bins=10, edgecolor='black')
-plt.title('Wallet Credit Score Distribution')
-plt.xlabel('Credit Score (1–1000)')
-plt.ylabel('Number of Wallets')
-plt.grid(True)
-plt.show()
-```
+| ----------- | ------------- |
+| 1 - 100     |           757 |
+| 101 - 200   |           471 |
+| 201 - 300   |           467 |
+| 301 - 400   |           396 |
+| 401 - 500   |           305 |
+| 501 - 600   |           304 |
+| 601 - 700   |           297 |
+| 701 - 800   |           286 |
+| 801 - 900   |           138 |
+| 901 - 1000  |            76 |
 
 ---
 
