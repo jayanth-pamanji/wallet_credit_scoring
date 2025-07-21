@@ -27,21 +27,7 @@ This project scores wallets on a scale of **1 to 1000** based on their historica
 
 ---
 
-## 💡 Processing Flow & Architecture
-
-graph TD
-    A[Raw Aave V2 Data] --> B[Data Cleaning]
-    B --> C[Expand actionData JSON]
-    C --> D[Drop irrelevant columns]
-    D --> E[Normalize + Feature Engineering]
-    E --> F[PCA for dimensionality reduction]
-    F --> G[KMeans Clustering]
-    F --> H[DBSCAN Clustering]
-    G --> I[Cluster ranking]
-    I --> J[Assign scores (1-1000)]
-    J --> K[Export & Visualization]
-
-```
+<pre lang="markdown"> ## 💡 Processing Flow & Architecture ```mermaid graph TD A[Raw Aave V2 Data] --> B[Data Cleaning] B --> C[Expand actionData JSON] C --> D[Drop irrelevant columns] D --> E[Normalize + Feature Engineering] E --> F[PCA for dimensionality reduction] F --> G[KMeans Clustering] F --> H[DBSCAN Clustering] G --> I[Cluster ranking] I --> J[Assign scores (1-1000)] J --> K[Export & Visualization] ``` </pre>
 
 ---
 
