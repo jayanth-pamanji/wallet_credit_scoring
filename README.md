@@ -29,7 +29,6 @@ This project scores wallets on a scale of **1 to 1000** based on their historica
 
 ## 💡 Processing Flow & Architecture
 
-```mermaid
 graph TD
     A[Raw Aave V2 Data] --> B[Data Cleaning]
     B --> C[Expand actionData JSON]
@@ -41,6 +40,7 @@ graph TD
     G --> I[Cluster ranking]
     I --> J[Assign scores (1-1000)]
     J --> K[Export & Visualization]
+
 ```
 
 ---
